@@ -34,10 +34,7 @@ class CampsiteInfo extends Component {
               <div key={comments.text}>
                 <div>
                   {comments.author},{" "}
-                  {new Intl.DateTimeFormat("en-US", {
-                    year: "numeric",
-                    month: "short",
-                    day: "2-digit"
+                  {new Intl.DateTimeFormat('en-US', {year: 'numeric', month: 'short', day: '2-digit'
                   }).format(new Date(Date.parse(comments.date)))}
                 </div>
                 <div>{comments.date}</div>
